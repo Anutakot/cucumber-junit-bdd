@@ -36,6 +36,12 @@
             <version>${cucumber.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>me.jvt.cucumber</groupId>
+            <artifactId>reporting-plugin</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+
     </dependencies>
 
 </project>
