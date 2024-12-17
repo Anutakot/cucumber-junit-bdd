@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
         },
         features = {"src/test/resources/feature/api", "src/test/resources/feature/ui"},
         glue = "com/cydeo/step_definitions",
-        dryRun = true,
-        tags = "@login",
+        dryRun = false,
+        tags = "@linkCheck",
         publish = true
 
 )

@@ -41,7 +41,7 @@ public class Driver {
 
             if (browserType.equalsIgnoreCase("chrome")) {
                 driver = new ChromeDriver();
-                driver.manage().window().fullscreen();
+                driver.manage().window().maximize();
                 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
             } else if (browserType.equalsIgnoreCase("firefox")) {
@@ -64,6 +64,7 @@ public class Driver {
         if (driver!=null){
             driver.close();
             driver.quit();
+            driver=null;
         }
     }
 

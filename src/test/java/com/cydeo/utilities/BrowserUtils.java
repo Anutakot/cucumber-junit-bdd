@@ -59,4 +59,8 @@ public class BrowserUtils {
     }
 
 
+    public static void verifyUrlContains(String partOfTheURL) {
+        String actualUrl = Driver.get().getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains(partOfTheURL));
+    }
 }
